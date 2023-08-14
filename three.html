@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>function</title>
+    </head>
+    <body>
+
+        <form name="formal">
+            <input type="text" name="first" id="first">
+            <input type="text" name="second" id="second">
+        </form>
+            <input type="button" value="clickme" onclick="f1()">
+            <br/></br>
+            <input type="text" name="result" id="result">
+
+        <script type="text/javascript">
+            function f(){
+                var a=document.getElementById("first").value;
+                var b=document.getElementById("second").value;
+                var c=(parseInt(a)+parseInt(b));
+                return c;
+            }
+            function f1(){
+                var result=f();
+                document.getElementById("result").value=result;
+            }
+        </script>
+    </body>
+</html>
